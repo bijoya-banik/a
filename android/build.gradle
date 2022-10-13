@@ -1,0 +1,69 @@
+
+
+
+buildscript {
+    repositories {
+        google()  // Google's Maven repository
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.0'
+        classpath 'com.google.gms:google-services:4.3.3'
+    }
+}
+
+allprojects {
+    repositories {
+        google()  // Google's Maven repository
+        jcenter()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+// rootProject.allprojects {
+
+//     subprojects {
+//         project.configurations.all {
+//             resolutionStrategy.eachDependency { details ->
+//                 if (details.requested.group == 'com.github.bumptech.glide'
+//                         && details.requested.name.contains('glide')) {
+//                     details.useVersion "4.8.0"
+//                 }
+//             }
+//         }
+//     }
+
+// }
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// subprojects {
+//     project.configurations.all {
+//         resolutionStrategy.eachDependency { details ->
+//             if (details.requested.group == 'com.android.support'
+//                     && !details.requested.name.contains('multidex') ) {
+//                 details.useVersion "29.1.0"
+//             }
+//         }
+//     }
+// }
+subprojects {
+    afterEvaluate {project ->
+        if (project.hasProperty("android")) {
+            android {
+                compileSdkVersion 28
+                buildToolsVersion "28"
+            }
+        }
+    }
+}
+

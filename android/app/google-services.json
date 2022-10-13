@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "373723819085",
+    "firebase_url": "https://bahrainunique-b42ee.firebaseio.com",
+    "project_id": "bahrainunique-b42ee",
+    "storage_bucket": "bahrainunique-b42ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373723819085:android:6dd8d5bf1868a647328004",
+        "android_client_info": {
+          "package_name": "com.example.bahrain_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373723819085-pgg3o90r8jqpv29qdeo6659b486bruml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5D9bGpiVoCfiBdAhfwHTOcnft_EPzYAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373723819085-pgg3o90r8jqpv29qdeo6659b486bruml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373723819085:android:d46bca2f2fc17cc2328004",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_bokkor_dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373723819085-pgg3o90r8jqpv29qdeo6659b486bruml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5D9bGpiVoCfiBdAhfwHTOcnft_EPzYAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373723819085-pgg3o90r8jqpv29qdeo6659b486bruml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
